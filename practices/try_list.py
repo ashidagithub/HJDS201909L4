@@ -5,7 +5,9 @@ import random
 '''
 1) Create list
 '''
+# 1 create
 a = []
+print(a)
 
 '''
 2) Assignment list
@@ -15,25 +17,32 @@ b = [1, 2, 3, 4, 5, 6]
 
 print(a)
 print(b)
+print('-------cutting line-----')
 
 '''
 3) Append/Extend
 '''
 a += ['Mike']
+# a.append('Mike')
 print(a)
+print('-------cutting line-----')
 
 for i in range(3):
     a.append('xxx')
 print(a)
+print('-------cutting line-----')
 
 a.extend(b)
 print(a)
+print(b)
+print('-------cutting line-----')
 
 '''
 5) Joint
 '''
 c = a + b
 print(c)
+print('-------cutting line-----')
 
 '''
 6) Lenth
@@ -56,7 +65,7 @@ for element in a:
     print(element)
 
 print('-----cutting line-----')
-for i in range(5):
+for times in range(5):
     lucky = random.choice(a)
     print(lucky)
 
@@ -66,7 +75,7 @@ for i in range(5):
 a = ['Archie', 'Leon', 'Cynthia', 'Eathson', 'Kevin']
 
 index = 3
-a[index] = 'Cosmo'
+a[index] = 'Mike'
 print('-----cutting line-----')
 print(a)
 

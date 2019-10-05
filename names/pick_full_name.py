@@ -12,6 +12,9 @@ given_words1 = [ \
 ]
 given_words.extend(given_words1)
 
+# Define sex
+sex = ('Female', 'Male')
+
 # Create a new full name
 full_name = ''
 class_name = []
@@ -23,14 +26,17 @@ for i in range(times):
     full_name = fname + ' ' + lname
     #print(full_name)
 
+    '''
     sex = random.randint(1,100)
     if (sex % 2) == 0:
         s_sex = 'Female'
     else:
         s_sex = 'Male'
+    '''
+    s_sex = random.choice(sex)
     student = (full_name, s_sex)
     print(student)
-    
+
     class_name.append(student)
 
 print('-----cutting line-----')

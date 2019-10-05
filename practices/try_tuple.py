@@ -52,3 +52,12 @@ print('-----cutting line-----')
 for i in range(5):
     lucky = random.choice(a)
     print(lucky)
+
+index = 3
+del a[index]
+print('-----cutting line-----')
+print(a)
+
+print('-----cutting line-----')
+a.clear()
+print(a)
